@@ -1,5 +1,5 @@
 # Buggi-2
-Buggi-2, named after the "Kalki: 2898 AD" movie's Buggi character, is a language model trained on the Telugu language (CulturaX dataset on HF) using DGX (version 1 with relatively smaller data), and using A6000 (version 2 on CulturaX).
+Buggi-2, named after the "Kalki: 2898 AD" movie's Buggi character, is a language model trained on the Telugu language (CulturaX dataset on HF) using DGX (version 1 with relatively smaller data), and using A6000 (version 2 on CulturaX). Will host it on GCP if I get to use GCP's 300$ credit with GPU for some time.
 
 ### Sample results
 #### 98M, Half of CulturaX `te` data:
@@ -93,7 +93,7 @@ Generated: నమస్కారం, నేను తెలుగు దేశ�
 
 ### BTS (behind the scenes)
 * DOT stands for Decoder-only-Transformer, a funny pun intended for a dialogue in Shanker's Robo (2010) movie.
-* I recently trained the next version of Buggi (an SLM on Telugu text): 10M, 98M, and 124M parameter model variants (a modified GPT-2 architecture) on CulturaX's Telugu collection. Learnt a lot about processing raw text, training a tokeniser, training dynamics, loss functions, hyperparameters, and GPUs at a relatively bigger scale than Buggi-1. Ran a few experiments on a smaller variant and a subset of data, then gradually scaled it up, and experienced the capability grow from generating short, valid words to sentences to paragraphs. Turns out, with good textual data, transformer-based architecture, tokeniser, compute, one could just train a model to memorise/encode any data (kinda by heart) as its parameters. Since a lot of data is news articles about movies, mostly, a noun is contextualised as a movie name by the model 🤣, for ex, Amaravati (Andhra Pradesh capital) is confused as a movie name when I asked about its progress. See sample results: github.com/Vasudeva-bit/buggi - posted on @KilaruVasudeva
+* I recently trained the next version of Buggi (an SLM on Telugu text): 10M, 98M, and 124M parameter model variants (a modified GPT-2 architecture) on CulturaX's Telugu collection. Learnt a lot about processing raw text, training a tokeniser, training dynamics, loss functions, hyperparameters, and GPUs at a relatively bigger scale than Buggi-1. Ran a few experiments on a smaller variant and a subset of data, then gradually scaled it up, and experienced the capability grow from generating short, valid words to sentences to paragraphs. Turns out, with good textual data, transformer-based architecture, tokeniser, compute, one could just train a model to memorise/encode any data (kinda by heart) as its parameters. Since a lot of data is news articles about movies, mostly, a noun is contextualised as a movie name by the model 🤣, for ex, Amaravati (Andhra Pradesh capital) is confused as a movie name when I asked about its progress. Will host it on GCP if I get to use GCP's 300$ credit with GPU for sometime. See sample results: github.com/Vasudeva-bit/buggi - posted on @KilaruVasudeva
 
 ### More data for Telugu
 * Swetcha (HYD NGO), AI4Bharat (IIT-Madras)

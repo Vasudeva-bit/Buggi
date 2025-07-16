@@ -1,4 +1,4 @@
-# Buggi
+# Buggi-2
 Buggi-2, named after the "Kalki: 2898 AD" movie's Buggi character, is a language model trained on the Telugu language (CulturaX dataset on HF) using DGX (version 1 with relatively smaller data), and using A6000 (version 2 on CulturaX).
 
 ### Sample results
